@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<style>
+    
+   .col-1{
+        width: 2.75rem;
+    }
+
+</style>
+</head>
+
+<body>
+   
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <div class="navbar-brand"><a class="text-white text-decoration-none" href="./index.html">Blogen</a></div>
+               
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                 
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item "><a class="nav-link text-white" href="./index.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Posts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Users</a></li>
+                </ul>
+                <ul class="nav navbar-nav ms-auto pe-3">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-solid fa-user"></i> Welcome Brad</a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" href="#"><i class="fa-solid fa-address-card"></i> Profile</a>
+                            <a class="dropdown-item" href="#"> <i class="fa-sharp fa-solid fa-right-to-bracket"></i> Login</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-user-xmark"></i> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<section class="bg-info text-white">
+    <div class="container pt-2 pb-2">
+        <div class="row">
+        <i class="fa-solid fa-gear fs-1 col-1 pt-1"></i><h1 class="col fw-normal">Add Post</h1>
+        </div>
+    </div>
+</section> 
+
+<section>
+    <div class="container mt-4">
+    <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title">
+      </div>
+      
+      <div class="mb-3">
+        <label for="category" class="form-label">Category</label>
+        <input type="text" class="form-control" id="category" placeholder="Web Development">
+      </div>
+      
+      <label for="image" class="form-label">Upload image</label>
+      
+      <div class="input-group">
+        <input id="image" type="text" class="form-control" placeholder="Choose File">
+        <label for="image" class="input-group-text">Browse</label>
+      </div>
+      
+      <div class="form-text">
+        Max Size is 3 mb
+      </div>
+
+      <div class="mt-4">
+        <label for="body" class="form-label">Body</label>
+        <textarea name="editorexample" class="form-control" id="body"></textarea> 
+      </div>
+      <script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script> 
+
+        <script> 
+            CKEDITOR.replace('editorexample'); 
+        </script> 
+    </div>
+</section>
+
+<div class="container border-top mt-4 d-flex flex-row-reverse">
+    <button class="btn btn-info text-white my-3">Save Changes</button>
+</div>
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
