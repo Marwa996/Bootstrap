@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<style>
+    .col-4{
+        padding: 0;
+    }
+</style>
+</head>
+
+<body>
+
+<section>
+   
+    <div class="container bg-dark text-white">
+        
+        <div class="row">
+            
+            <div class="col-4">
+                <img class="img-fluid h-100" src="./img/person.jpeg">
+            </div>
+
+            <div class="col-8">
+                <div class="row pt-5 mb-5 justify-content-around align-items-center">
+                    <h1 class="col-5 fw-normal">John Doe</h1>
+                    <i class="fa-brands fa-twitter col-1"></i>
+                    <i class="fa-brands fa-square-facebook col-1"></i>
+                    <i class="fa-brands fa-instagram col-1"></i>
+                    <i class="fa-brands fa-github col-1"></i>
+                </div>
+
+                <div class="row bg-black py-3">
+                    <p class="">Experienced Full Stack Web Developer</p>
+                </div>
+
+                <div class="row">
+                    <button id="home" class="btn col-3 rounded-0 btn-primary p-5 text-white d-flex flex-column align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#home" aria-expanded="false"><i class="fa-solid fa-house-chimney fs-3" ></i> Home</button>
+                    <button id="resume" class="btn col-3 rounded-0 btn-success p-5 text-white text-center d-flex flex-column align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#resume" aria-expanded="false"><i class="fa-solid fa-graduation-cap fs-3" ></i> Resume</button>
+                    <button id="work" class="btn col-3 rounded-0 btn-warning p-5 text-white text-center d-flex flex-column align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#work" aria-expanded="false"><i class="fa-solid fa-folder-open fs-3" ></i> Work</button>
+                    <button id="contact" class="btn col-3 rounded-0 btn-danger p-5 text-white d-flex flex-column align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#contact" aria-expanded="false"><i class="fa-solid fa-envelope fs-3"></i> Contact</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-5 ps-4">
+            <button class="btn btn-dark text-white btn-outline-light"><i class="fa-solid fa-cloud"></i> Download Resume</button>
+        </div>
+    </div>
+</section>
+
+<div class="accordion" id="accordionExample">
+    <div class="container text-white bg-primary py-5 collapse" data-parent="#accordionExample" id="home">
+        <h1>Welcome To My Page</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, inventore!</p>
+    </div>
+
+
+
+    <div class="container text-white bg-success py-5 collapse" data-parent="#accordionExample" id="resume">
+        <h1>My Resume</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, inventore!</p>
+    </div>
+
+
+
+    <div class="container text-white bg-warning py-5 collapse" data-parent="#accordionExample" id="work">
+        <h1>My Work</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, inventore!</p>
+    </div>
+
+
+
+    <div class="container text-white bg-danger py-5 collapse" data-parent="#accordionExample" id="contact">
+        <h1>Contact</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, inventore!</p>
+    </div>
+
+</div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <script src="./js.js" defer></script>
+
+</body>
+</html>

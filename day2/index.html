@@ -61,8 +61,8 @@
 <section>
     <div class="container pt-4">
         <div class="row justify-content-between">
-            <a href="./addUser.html" class="text-white text-decoration-none col-3 py-2 bg-primary rounded text-center"><i class="fa-solid fa-plus"></i> Add Post</a>
-            <button class="btn btn-success col-3 py-2"><i class="fa-solid fa-plus"></i> Add Category</button>
+            <a href="./addPost.html" class="text-white text-decoration-none col-3 py-2 bg-primary rounded text-center"><i class="fa-solid fa-plus"></i> Add Post</a>
+            <button class="btn btn-success col-3 py-2" data-bs-toggle="modal" data-bs-target="#addCategory"><i class="fa-solid fa-plus"></i> Add Category</button>
             <button class="btn btn-warning col-3 py-2"><i class="fa-solid fa-plus"></i> Add User</button>
         </div>
     </div>
@@ -137,6 +137,25 @@
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
+<div class="modal fade" id="addCategory" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-success">
+          <h5 class="modal-title text-white" id="exampleModalLabel">Add Category</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3">
+                <label for="category" class="form-label">Title</label>
+                <input type="text" class="form-control" id="category">
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 
