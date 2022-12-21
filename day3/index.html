@@ -42,49 +42,39 @@
                 </div>
 
                 <div class="row">
-                    <button id="home" class="btn col-3 rounded-0 btn-primary p-5 text-white d-flex flex-column align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#home" aria-expanded="false"><i class="fa-solid fa-house-chimney fs-3" ></i> Home</button>
-                    <button id="resume" class="btn col-3 rounded-0 btn-success p-5 text-white text-center d-flex flex-column align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#resume" aria-expanded="false"><i class="fa-solid fa-graduation-cap fs-3" ></i> Resume</button>
-                    <button id="work" class="btn col-3 rounded-0 btn-warning p-5 text-white text-center d-flex flex-column align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#work" aria-expanded="false"><i class="fa-solid fa-folder-open fs-3" ></i> Work</button>
-                    <button id="contact" class="btn col-3 rounded-0 btn-danger p-5 text-white d-flex flex-column align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#contact" aria-expanded="false"><i class="fa-solid fa-envelope fs-3"></i> Contact</button>
+                    <button id="homebtn" class="btn col-3 rounded-0 btn-primary p-5 text-white d-flex flex-column align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#home" aria-expanded="false"><i class="fa-solid fa-house-chimney fs-3" ></i> Home</button>
+                    <button id="resumebtn" class="btn col-3 rounded-0 btn-success p-5 text-white d-flex flex-column align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#resume" aria-expanded="false"><i class="fa-solid fa-graduation-cap fs-3" ></i> Resume</button>
+                    <button id="workbtn" class="btn col-3 rounded-0 btn-warning p-5 text-white d-flex flex-column align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#work" aria-expanded="false"><i class="fa-solid fa-folder-open fs-3" ></i> Work</button>
+                    <button id="contactbtn" class="btn col-3 rounded-0 btn-danger p-5 text-white d-flex flex-column align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#contact" aria-expanded="false"><i class="fa-solid fa-envelope fs-3"></i> Contact</button>
                 </div>
             </div>
         </div>
+        <div class="row text-white bg-primary py-5 collapse" id="home">
+            <h1>Welcome To My Page</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, inventore!</p>
+        </div>
 
+        <div class="row text-white bg-success py-5 collapse" id="resume">
+            <h1>My Resume</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, inventore!</p>
+        </div>
+    
+        <div class="row text-white bg-warning py-5 collapse" id="work">
+            <h1>My Work</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, inventore!</p>
+        </div>
+    
+        <div class="row text-white bg-danger py-5 collapse" id="contact">
+            <h1>Contact</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, inventore!</p>
+        </div>
         <div class="py-5 ps-4">
             <button class="btn btn-dark text-white btn-outline-light"><i class="fa-solid fa-cloud"></i> Download Resume</button>
         </div>
     </div>
 </section>
 
-<div class="accordion" id="accordionExample">
-    <div class="container text-white bg-primary py-5 collapse" data-parent="#accordionExample" id="home">
-        <h1>Welcome To My Page</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, inventore!</p>
-    </div>
-
-
-
-    <div class="container text-white bg-success py-5 collapse" data-parent="#accordionExample" id="resume">
-        <h1>My Resume</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, inventore!</p>
-    </div>
-
-
-
-    <div class="container text-white bg-warning py-5 collapse" data-parent="#accordionExample" id="work">
-        <h1>My Work</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, inventore!</p>
-    </div>
-
-
-
-    <div class="container text-white bg-danger py-5 collapse" data-parent="#accordionExample" id="contact">
-        <h1>Contact</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, inventore!</p>
-    </div>
-
-</div>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
     <script src="./js.js" defer></script>
 

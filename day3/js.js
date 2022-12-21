@@ -1,16 +1,38 @@
-var resumeBtn=document.getElementById('resume');
-var workBtn=document.getElementById('work');
-var contactBtn=document.getElementById('contact');
-var clickbutton = document.getElementById('home');
+var resumeBtn = document.getElementById("resumebtn");
+var workBtn = document.getElementById("workbtn");
+var contactBtn = document.getElementById("contactbtn");
+var clickbutton = document.getElementById("homebtn");
 
-var arr=[clickbutton,resumeBtn, workBtn, contactBtn];
+var x = document.getElementsByClassName("collapse");
 
-clickbutton.addEventListener('click', function(){
+clickbutton.addEventListener("click", function () {
+  for (let i = 0; i < x.length; i++) {
+    if (x[i].classList.contains("show")) {
+      x[i].classList.remove("show");
+    }
+  }
+});
 
-    for(let i=0;i<arr.length;i++){
-        if (arr[i].classList('show')) {
-            console.log(arr[i].classList());
-            arr[i].classList.remove("show");
-            arr[i].classList.add("collapsed")
-            // console.log(arr[i].classList());
-        }}});
+resumeBtn.addEventListener("click", function () {
+  for (let i = 0; i < x.length; i++) {
+    if (x[i].classList.contains("show")) {
+      x[i].classList.remove("show");
+    }
+  }
+});
+
+workBtn.addEventListener("click", function () {
+  for (let i = 0; i < x.length; i++) {
+    if (x[i].classList.contains("show")) {
+      x[i].classList.remove("show");
+    }
+  }
+});
+
+contactBtn.addEventListener("click", function () {
+  for (let i = 0; i < x.length; i++) {
+    if (x[i].classList.contains("show")) {
+      x[i].classList.remove("show");
+    }
+  }
+});
